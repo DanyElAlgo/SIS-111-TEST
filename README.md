@@ -1,2 +1,5 @@
 # SIS-111-TEST
-testing the repositories of Github.
+testeando los repositorios de Github.
+-control de flujo
+- variables
+- operaciones aritmeticas
