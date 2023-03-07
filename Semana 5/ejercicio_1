@@ -1,1 +1,42 @@
 #include<iostream>
+using namespace std;
+
+int main () {
+
+	short int aN;
+	short int days;
+	short int cd1 = 20;
+	short int cd2 = 10;
+	short int cd3 = 40;
+	short int cm1 = 560;
+	short int cm2 = 270;
+	short int cm3 = 1100;
+	
+	cout << "introduce el espacio de trabajo a reservar, luego el número de días que lo vas a reservar." << endl;
+	cout << "Oprima 1 para un espacio de oficina abierto." << endl;
+	cout << "Oprima 2 para un escritorio dedicado." << endl;
+	cout << "Oprima 3 para una oficina privada." << endl;
+	
+	cin >> aN >> days;
+	
+	if (aN == 1) {
+	
+	cout << "El costo será de: " << (days / 30 * cm1) + (days % 30 * cd1) << " Bs. en total." << endl;
+	}
+	
+	else if (aN == 2) {
+	
+	cout << "El costo será de: " << (days / 30 * cm2) + (days % 30 * cd2) << " Bs. en total." << endl;
+	}
+	
+	else if (aN == 3) {
+	
+	cout << "El costo será de: " << (days / 30 * cm3) + (days % 30 * cd3) << " Bs. en total." << endl;
+	}	
+	
+	else {
+	
+	cout << "Valor inválido, intente de nuevo, por favor." << endl;
+	
+	}
+}
