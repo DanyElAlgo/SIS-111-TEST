@@ -1,14 +1,18 @@
 #include <iostream>
 using namespace std;
 int main() {
- string query1;
- string query2;
+    
+ string query;
+ getline (cin, query);
  
- cin >> query1 >> query2;
- 
- if (query1 == "green") {
- 	cout << "5" << endl;}
- if (query2 == "parrot") {
- 	cout << "12" << endl;}
+for (int i = 0; i <= query.size(); i++) {
+     if (query[i] == ' ' ) {
+         cout << i << endl;
+     }
+     if (query[i] == query.size()) {
+         break;
+     }
 }
-//No he entendido nada de nada sobre este ejercicio...
+cout << query.size() << endl;
+}
+//Que dificil!!!!!
