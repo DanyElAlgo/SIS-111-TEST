@@ -1,0 +1,22 @@
+int saldo
+int costo = 5
+string respuesta
+
+OUTPUT: "Bienvenido. Introduzca su saldo disponible. (usa solo números positivos!)"
+INPUT: saldo
+OUTPUT: "Se venden helados a " costo "$ cada uno."
+
+WHILE (saldo >= costo) {
+	OUTPUT: "Tienes " saldo "$ disponibles."
+	OUTPUT: "¿Quieres comprar un helado? si/no"
+	INPUT: respuesta
+
+	IF (respuesta == "si") {
+		OUTPUT: "Compraste un helado!"
+		saldo -= costo }
+	ELSE IF (respuesta == "no") {BREAK}
+	ELSE {OUTPUT: "Respuesta no válida. (Usa \"si\" para comprar o \"no\" para salir)"}
+	}
+IF (saldo < costo) {OUTPUT: "No tienes suficiente saldo disponible para comprar más helado. Se cerrará la aplicación."}
+
+OUTPUT: "Gracias por usar nuestra aplicación."
