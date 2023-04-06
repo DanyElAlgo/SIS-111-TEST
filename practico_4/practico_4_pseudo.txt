@@ -1,0 +1,13 @@
+int a
+
+INPUT: a
+
+switch (a) {
+    CASE 1: OUTPUT: "Hoy es lunes...", BREAK
+    CASE 2: OUTPUT: "Hoy es martes.", BREAK
+    CASE 3: OUTPUT: "Hoy es miércoles.", BREAK
+    CASE 4: OUTPUT: "Hoy es jueves.", BREAK
+    CASE 5: OUTPUT: "Hoy es viernes!", BREAK
+    CASE 6: OUTPUT: "Hoy es sábado!", BREAK
+    CASE 7: OUTPUT: "Hoy es domingo!", BREAK
+    }
