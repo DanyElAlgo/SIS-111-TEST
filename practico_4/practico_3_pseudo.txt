@@ -1,0 +1,17 @@
+int digit
+string text
+int i
+
+INPUT: digit
+
+WHILE (digit >= 1) {
+    text += to_string (digit % 2)
+    digit /= 2
+    }
+
+i = text.size -1
+
+WHILE (i  >= 0) {
+    OUTPUT: text[i]
+    i -= 1
+    }
